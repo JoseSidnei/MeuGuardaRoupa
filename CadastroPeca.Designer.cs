@@ -46,7 +46,7 @@
             this.dtpDataCompra = new System.Windows.Forms.DateTimePicker();
             this.txtValor = new System.Windows.Forms.TextBox();
             this.btnSalvar = new System.Windows.Forms.Button();
-            this.rbStatusAtivo = new System.Windows.Forms.RadioButton();
+            this.rbAtivo = new System.Windows.Forms.RadioButton();
             this.rbStatusInativo = new System.Windows.Forms.RadioButton();
             this.label9 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -261,18 +261,18 @@
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
-            // rbStatusAtivo
+            // rbAtivo
             // 
-            this.rbStatusAtivo.AutoSize = true;
-            this.rbStatusAtivo.Checked = true;
-            this.rbStatusAtivo.Font = new System.Drawing.Font("Baskerville Old Face", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbStatusAtivo.Location = new System.Drawing.Point(161, 345);
-            this.rbStatusAtivo.Name = "rbStatusAtivo";
-            this.rbStatusAtivo.Size = new System.Drawing.Size(69, 26);
-            this.rbStatusAtivo.TabIndex = 9;
-            this.rbStatusAtivo.TabStop = true;
-            this.rbStatusAtivo.Text = "Ativo";
-            this.rbStatusAtivo.UseVisualStyleBackColor = true;
+            this.rbAtivo.AutoSize = true;
+            this.rbAtivo.Checked = true;
+            this.rbAtivo.Font = new System.Drawing.Font("Baskerville Old Face", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbAtivo.Location = new System.Drawing.Point(161, 345);
+            this.rbAtivo.Name = "rbAtivo";
+            this.rbAtivo.Size = new System.Drawing.Size(69, 26);
+            this.rbAtivo.TabIndex = 9;
+            this.rbAtivo.TabStop = true;
+            this.rbAtivo.Text = "Ativo";
+            this.rbAtivo.UseVisualStyleBackColor = true;
             // 
             // rbStatusInativo
             // 
@@ -316,7 +316,7 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.rbStatusInativo);
-            this.Controls.Add(this.rbStatusAtivo);
+            this.Controls.Add(this.rbAtivo);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.txtValor);
             this.Controls.Add(this.dtpDataCompra);
@@ -361,7 +361,7 @@
         private System.Windows.Forms.DateTimePicker dtpDataCompra;
         private System.Windows.Forms.TextBox txtValor;
         private System.Windows.Forms.Button btnSalvar;
-        private System.Windows.Forms.RadioButton rbStatusAtivo;
+        private System.Windows.Forms.RadioButton rbAtivo;
         private System.Windows.Forms.RadioButton rbStatusInativo;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnCancelar;

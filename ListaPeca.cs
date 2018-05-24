@@ -30,19 +30,19 @@ namespace MeuGuardaRoupa
         private void AtualizarLista()
         {
             dgvListaPeca.Rows.Clear();
+            string busca = txtBuscar.Text;
             for (int i = 0; i < Program.pecas.Count; i++)
             {
                 Peca peca = Program.pecas[i];
+                if(peca.Ativo == true && (peca.Nome.Contains(busca) ||
+                    peca.Marca.Contains(busca)))
                 dgvListaPeca.Rows.Add(new object[]{
                     peca.Nome, peca.Cor, peca.Marca, peca.Valor
                 });
             }
         }
 
-        private void btnCadastrar_Click(object sender, EventArgs e)
-        {
-            new CadastroPeca().ShowDialog();
-        }
+        
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
@@ -83,6 +83,19 @@ namespace MeuGuardaRoupa
             }
 
 
+        }
+
+        private void txtBuscar_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                AtualizarLista();
+            }
+        }
+
+        private void txtBuscar_Leave(object sender, EventArgs e)
+        {
+            AtualizarLista();
         }
 
     }
